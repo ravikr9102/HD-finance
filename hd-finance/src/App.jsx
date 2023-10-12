@@ -1,30 +1,18 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Service from './components/Service';
-import Content from './components/Content';
-import Social from './components/Social';
-import Creation from './components/Content-creation';
-import Financial from './components/Financial';
-import Client from './components/Client';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Display from "./components/Display"
+import React from "react"
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import DisplayForm from "./components/DisplayForm"
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <Service />
-      <Content />
-      <Social />
-      <Creation />
-      <Financial />
-      <Client />
-      <Contact />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Display />}/>
+        <Route path="/display" element={<DisplayForm/>}/>
+      </Routes>
+    </Router>
+      </>
   );
 }
 

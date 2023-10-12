@@ -2,6 +2,7 @@ import React from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { BiLogoGmail } from 'react-icons/bi';
 import { BsTwitter } from 'react-icons/bs';
+import {Link} from "react-router-dom"
 
 export default function Header() {
   return (
@@ -10,10 +11,13 @@ export default function Header() {
         <h1 className="text-2xl">HD finance</h1>
       </div>
       <ul className="flex justify-center items-center">
-        <li className="mr-8">About</li>
-        <li className="mr-8">Services</li>
-        <li className="mr-8">Contact</li>
+       
+        <li className="mr-8"> <a href='#About'>About  </a></li>
+        <li className="mr-8"> <a href="#Service">Services </a></li>
+        <li className="mr-8"><a href="#Contact">Contact</a></li>
+        <Link to="/display">
         <li className="mr-8">Invest</li>
+        </Link>
       </ul>
       <ul className="flex justify-center items-center">
         <li className="mr-6 text-xl">

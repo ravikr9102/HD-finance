@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Service() {
   return (
-    <section className="p-10 bg-sky-900">
+    <section id="Service" className="p-10 bg-sky-900">
       <h2 className="text-4xl text-center py-4 font-semibold text-slate-200 ">Services</h2>
       <div className="grid grid-cols-3 gap-4">
         <div className='relative'>
