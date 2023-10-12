@@ -18,6 +18,12 @@ export default function Header() {
         <Link to="/display">
         <li className="mr-8">Invest</li>
         </Link>
+        <Link to="/funded">
+        <li className="mr-8">Funded</li>
+        </Link>
+        <Link to="/payment">
+        <li className="mr-8">Payment</li>
+        </Link>
       </ul>
       <ul className="flex justify-center items-center">
         <li className="mr-6 text-xl">

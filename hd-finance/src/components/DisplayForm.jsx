@@ -1,42 +1,44 @@
-import React, { useEffect, useState } from "react"
-import {Link} from "react-router-dom"
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
+function DisplayForm() {
+  const [multipleUser, setMultipleUser] = useState([]);
 
-function DisplayForm (){
+  useEffect(() => {
+    const storedFormData = JSON.parse(localStorage.getItem('formData')) || [];
+    setMultipleUser([...storedFormData]);
+  }, []);
 
-   
-    const[multipleUser, setMultipleUser] = useState([])
+  console.log(multipleUser);
 
-    useEffect(() => {
-        const storedFormData = JSON.parse(localStorage.getItem("formData")) || [];
-        setMultipleUser([...storedFormData])
-    },[])
+  // console.log(storedFormData)
 
-    console.log(multipleUser)
-    
-// console.log(storedFormData)
-        
-    return(
-        <>
-        <Link to="/">
-            <button>Back</button>
+  return (
+    <div className="form p-10">
+      <div className="flex justify-center items-center">
+        <Link className='bg-slate-300 py-1 px-4 rounded-full' to="/">
+          Back
         </Link>
-        {multipleUser.length >0 ? (
-        multipleUser.map((ele, index) => {
-            return(
-          <div key={index}>
-            <p>Name: {ele.name}</p>
-            <p>Email: {ele.email}</p>
-            <p>Message: {ele.message}</p>
-          </div>
-            )
-})
-      ) : (
-        <div>No data found</div>
-      )}
-       
-        </>
-    )
+      </div>
+      <div className="grid grid-cols-2 gap-6">
+        {multipleUser.length > 0 ? (
+          multipleUser.map((ele, i) => {
+            return (
+              <div key={i} className="bg-slate-300 rounded p-5 m-2 mt-10 flex justify-center items-center">
+                <div>
+                  <p>Name: {ele.name}</p>
+                  <p>Email: {ele.email}</p>
+                  <p>Message: {ele.message}</p>
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className='text-center'>No data found</div>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default DisplayForm;
