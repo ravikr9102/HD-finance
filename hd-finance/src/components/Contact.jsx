@@ -20,6 +20,7 @@ export default function Contact() {
     newData.push(formData)
     setMultipleUser(newData)
     localStorage.setItem('formData', JSON.stringify(newData));
+    alert("Submitted Sucessfully")
     // document.getElementById("myform").reset();
   };
 
