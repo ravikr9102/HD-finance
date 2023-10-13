@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,10 +8,13 @@ export default function Contact() {
     name: '',
     email: '',
     message: '',
+    mobile:""
   });
   const [multipleUser, setMultipleUser] = useState(
     JSON.parse(localStorage.getItem('formData')) || []
   );
+
+  const formRef = useRef();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,14 +30,16 @@ export default function Contact() {
     toast.success('Submitted Sucessfully!', {
       position: toast.POSITION.TOP_CENTER,
       autoClose: 3000,
+    
     });
     // document.getElementById("myform").reset();
+    formRef.current.reset();
   };
 
   return (
     <section id="Contact" className="p-10 py-20 bg-sky-900">
       <div className="grid grid-cols-2 gap-5 ">
-        <form onSubmit={handleSubmit}>
+        <form ref={formRef} onSubmit={handleSubmit}>
           <input
             pe="text"
             name="name"
@@ -52,6 +57,15 @@ export default function Contact() {
             className="py-2 rounded px-6"
             placeholder="Enter your email!"
           />
+          <input style={{marginTop:"10px"}}
+            type="text"
+            name="mobile"
+            value={formData.mobile}
+            onChange={handleChange}
+            className="py-2 rounded px-6"
+            placeholder="Enter your number!"
+          />
+
 
           <textarea
             pe="text"

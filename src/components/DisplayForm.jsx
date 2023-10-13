@@ -29,6 +29,7 @@ function DisplayForm() {
                   <p>Name: {ele.name}</p>
                   <p>Email: {ele.email}</p>
                   <p>Message: {ele.message}</p>
+                  <p>Mobile :{ele.mobile}</p>
                 </div>
               </div>
             );

@@ -16,7 +16,7 @@ export default function Header() {
         <li className="mr-8"> <a href="#Service">Services </a></li>
         <li className="mr-8"><a href="#Contact">Contact</a></li>
         <Link to="/display">
-        <li className="mr-8">Invest</li>
+        <li className="mr-8">Message</li>
         </Link>
         <Link to="/funded">
         <li className="mr-8">Funded</li>
@@ -27,13 +27,7 @@ export default function Header() {
       </ul>
       <ul className="flex justify-center items-center">
         <li className="mr-6 text-xl">
-          <BsInstagram />
-        </li>
-        <li className="mr-6 text-xl">
           <BiLogoGmail />
-        </li>
-        <li className="mr-6 text-xl">
-          <BsTwitter />
         </li>
       </ul>
     </div>
