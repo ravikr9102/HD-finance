@@ -8,7 +8,7 @@ export default function Funded() {
   return (
     <>
     <HeaderSub/>
-    <body style={{backgroundColor:"rgb(12 74 110)", height:"auto"}}>
+    <body style={{backgroundColor:"rgb(12 74 110)", height:"auto"}} className='p-10'>
     <section className='p-10'>
     <div className="flex justify-center items-center py-2">
         <Link className='bg-slate-300 py-1 px-4 rounded-full' to="/">

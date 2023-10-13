@@ -62,7 +62,7 @@ export default function Contact() {
             name="mobile"
             value={formData.mobile}
             onChange={handleChange}
-            className="py-2 rounded px-6"
+            className="py-2 rounded px-40"
             placeholder="Enter your number!"
           />
 
