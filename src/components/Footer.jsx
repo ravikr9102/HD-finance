@@ -12,13 +12,7 @@ export default function Footer() {
       </div>
       <ul className="flex justify-center items-center">
         <li className="mr-6 text-xl">
-          <BsInstagram />
-        </li>
-        <li className="mr-6 text-xl">
           <BiLogoGmail />
-        </li>
-        <li className="mr-6 text-xl">
-          <BsTwitter />
         </li>
       </ul>
     </div>
