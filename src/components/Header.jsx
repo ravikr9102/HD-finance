@@ -27,7 +27,8 @@ export default function Header() {
       </ul>
       <ul className="flex justify-center items-center">
         <li className="mr-6 text-xl">
-          <BiLogoGmail />
+        <a href="mailto:hdfinance2020@gmail.com">  <BiLogoGmail /></a>
+        
         </li>
       </ul>
     </div>
