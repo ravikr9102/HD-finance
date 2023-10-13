@@ -1,20 +1,22 @@
-import React from 'react';
+import React from "react"
 import { BiLogoGmail } from 'react-icons/bi';
 import {AiOutlineUser} from "react-icons/ai"
 import {Link} from "react-router-dom"
 import { FaWhatsapp } from 'react-icons/fa';
 
-export default function Header() {
-  return (
-    <div className="flex justify-between items-center px-8 py-7 bg-black text-white">
+
+function HeaderSub () {
+    return(
+        <>
+         <div className="flex justify-between items-center px-8 py-7 bg-black text-white">
       <div>
         <h1 className="text-2xl">HD Finance</h1>
       </div>
       <ul className="flex justify-center items-center">
        
-        <li className="mr-8"> <a href='#About'>About  </a></li>
+        {/* <li className="mr-8"> <a href='#About'>About  </a></li>
         <li className="mr-8"> <a href="#Service">Services </a></li>
-        <li className="mr-8"><a href="#Contact">Contact</a></li>
+        <li className="mr-8"><a href="#Contact">Contact</a></li> */}
         <Link to="/display">
         <li className="mr-8">Message</li>
         </Link>
@@ -37,5 +39,8 @@ export default function Header() {
         <li><FaWhatsapp/> + 7355583373</li>
       </ul>
     </div>
-  );
+        </>
+    )
 }
+
+export default HeaderSub;

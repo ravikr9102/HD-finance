@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import HeaderSub from './HeaderSub';
 
 function DisplayForm() {
   const [multipleUser, setMultipleUser] = useState([]);
@@ -14,6 +15,9 @@ function DisplayForm() {
   // console.log(storedFormData)
 
   return (
+    <>
+    <HeaderSub/>
+    
     <div className="form p-10">
       <div className="flex justify-center items-center">
         <Link className='bg-slate-300 py-1 px-4 rounded-full' to="/">
@@ -39,6 +43,7 @@ function DisplayForm() {
         )}
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import HeaderSub from './HeaderSub'
+
 
 export default function Funded() {
   
   return (
+    <>
+    <HeaderSub/>
     <body style={{backgroundColor:"rgb(12 74 110)", height:"auto"}}>
     <section className='p-10'>
     <div className="flex justify-center items-center py-2">
@@ -21,24 +25,37 @@ export default function Funded() {
               <td style={{color:"white"}} >Fee - Rs.30k</td>
               <td style={{color:"white"}} >Funded Account-Rs.300k</td>
               <td style={{color:"white"}} >Profit Split <br></br> A 60% profit share within 10 days is lucrative, while a 20% loss can be significant, so careful investment and risk management are crucial. </td>
+              <Link to="/payment" >
+              <td style={{color:"white"}}><butoon>Pay</butoon></td>
+              </Link>
             </tr>
             <tr>
               <td style={{color:"white"}} >2.</td>
               <td style={{color:"white"}} >Fee - Rs.50k</td>
               <td style={{color:"white"}} >Funded Account-Rs.500k</td>
               <td style={{color:"white"}} >Profit Split <br></br> A 60% profit share within 10 days is lucrative, while a 20% loss can be significant, so careful investment and risk management are crucial. </td>
+              <Link to="/payment" >
+              <td style={{color:"white"}}><butoon>Pay</butoon></td>
+              </Link>
             </tr>
             <tr>
               <td style={{color:"white"}} >1.</td>
               <td style={{color:"white"}} >Fee - Rs.100k</td>
               <td style={{color:"white"}} >Funded Account-Rs.1M</td>
               <td style={{color:"white"}} >Profit Split <br></br> A 60% profit share within 10 days is lucrative, while a 20% loss can be significant, so careful investment and risk management are crucial. </td>
+              <Link to="/payment" >
+              <td style={{color:"white"}}><butoon>Pay</butoon></td>
+              </Link>
             </tr>
             <tr>
               <td style={{color:"white"}} >2.</td>
               <td style={{color:"white"}} >Fee - Rs.1M</td>
               <td style={{color:"white"}} >Funded Account-Rs.10M</td>
               <td style={{color:"white"}} >Profit Split <br></br> A 60% profit share within 10 days is lucrative, while a 10% loss can be significant, so careful investment and risk management are crucial. </td>
+              <Link to="/payment" >
+              <td style={{color:"white"}}><butoon>Pay</butoon></td>
+              </Link>
+              
             </tr>
           </tbody>
         </table>
@@ -69,5 +86,6 @@ export default function Funded() {
         </table>
       </div>
     </body>
+    </>
   )
 }
