@@ -1,8 +1,8 @@
 import React from 'react';
-import { BsInstagram } from 'react-icons/bs';
 import { BiLogoGmail } from 'react-icons/bi';
-import { BsTwitter } from 'react-icons/bs';
+import {AiOutlineUser} from "react-icons/ai"
 import {Link} from "react-router-dom"
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Header() {
   return (
@@ -25,11 +25,16 @@ export default function Header() {
         <li className="mr-8">Payment</li>
         </Link>
       </ul>
+     
       <ul className="flex justify-center items-center">
         <li className="mr-6 text-xl">
         <a href="mailto:hdfinance2020@gmail.com">  <BiLogoGmail /></a>
         
         </li>
+        <li className="mr-6 text-xl">
+        <AiOutlineUser/><p style={{fontSize:"15px"}}>15k+</p>
+        </li>
+        <li><FaWhatsapp/> + 7355583373</li>
       </ul>
     </div>
   );
