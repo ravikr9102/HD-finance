@@ -9,9 +9,7 @@ export default function Hero() {
           Take control of your financial future with our funded account <br />{' '}
           services.
         </h2>
-        <button className="bg-blue-600 text-white px-8 py-2 rounded">
-          Start Now
-        </button>
+       
       </div>
     </div>
   );
