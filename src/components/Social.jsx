@@ -16,7 +16,7 @@ export default function Social() {
         <figure className="p-2 flex justify-center items-center">
           <img
             className="object-cover w-80 h-80 w-96 h-96 rounded"
-            src="/src/assets/photo-1519389950473-47ba0277781c.avif"
+            src="/assets/photo-1519389950473-47ba0277781c.avif"
             alt=""
           />
         </figure>

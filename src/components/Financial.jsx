@@ -16,7 +16,7 @@ export default function Financial() {
         <figure className="p-2 flex justify-center items-center">
           <img
             className="object-cover w-80 h-80 w-96 h-96 rounded"
-            src="/src/assets/photo-1553729459-efe14ef6055d.avif"
+            src="/assets/photo-1553729459-efe14ef6055d.avif"
             alt=""
           />
         </figure>

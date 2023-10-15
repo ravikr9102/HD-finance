@@ -22,7 +22,7 @@ export default function About() {
         >
           <img 
             className="object-cover w-80 h-80 w-96 h-96 rounded"
-            src="/src/assets/photo-1560472355-536de3962603.avif"
+            src="/assets/photo-1560472355-536de3962603.avif"
             alt=""
           />
         </figure>

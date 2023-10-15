@@ -7,7 +7,7 @@ export default function Creation() {
         <figure className="p-2 flex justify-center items-center">
           <img
             className="object-cover w-80 h-80 w-96 h-96 rounded"
-            src="/src/assets/photo-1611784728558-6c7d9b409cdf.avif"
+            src="/assets/photo-1611784728558-6c7d9b409cdf.avif"
             alt=""
           />
         </figure>
