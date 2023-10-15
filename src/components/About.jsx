@@ -21,7 +21,7 @@ export default function About() {
           className="p-2 flex justify-center items-center"
         >
           <img 
-            className="object-cover w-80 h-80 w-96 h-96 rounded"
+            className="rounded"
             src="/assets/photo-1560472355-536de3962603.avif"
             alt=""
           />

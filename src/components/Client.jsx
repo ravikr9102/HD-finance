@@ -8,13 +8,22 @@ export default function Client() {
       </h2>
       <div className="grid md:grid-cols-3 gap-4">
         <figure>
-          <img src="/assets/photo-1557426272-fc759fdf7a8d.avif" />
+          <img
+            className="rounded"
+            src="/assets/photo-1557426272-fc759fdf7a8d.avif"
+          />
         </figure>
         <figure>
-          <img src="/assets/photo-1590650516494-0c8e4a4dd67e.avif" />
+          <img
+            className="rounded"
+            src="/assets/photo-1590650516494-0c8e4a4dd67e.avif"
+          />
         </figure>
         <figure>
-          <img src="/assets/photo-1557425529-b1ae9c141e7d.avif" />
+          <img
+            className="rounded"
+            src="/assets/photo-1557425529-b1ae9c141e7d.avif"
+          />
         </figure>
       </div>
     </section>
