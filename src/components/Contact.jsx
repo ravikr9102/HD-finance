@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,7 +8,7 @@ export default function Contact() {
     name: '',
     email: '',
     message: '',
-    mobile:""
+    mobile: '',
   });
   const [multipleUser, setMultipleUser] = useState(
     JSON.parse(localStorage.getItem('formData')) || []
@@ -30,61 +30,15 @@ export default function Contact() {
     toast.success('Submitted Sucessfully!', {
       position: toast.POSITION.TOP_CENTER,
       autoClose: 3000,
-    
     });
     // document.getElementById("myform").reset();
     formRef.current.reset();
   };
 
   return (
-    <section id="Contact" className="p-10 py-20 bg-sky-900">
-      <div className="grid grid-cols-2 gap-5 ">
-        <form ref={formRef} onSubmit={handleSubmit}>
-          <input
-            pe="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="mr-2 mt-8 py-2 px-6 rounded"
-            placeholder="Enter your name!"
-          />
-
-          <input
-            type="text"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="py-2 rounded px-6"
-            placeholder="Enter your email!"
-          />
-          <input style={{marginTop:"10px"}}
-            type="text"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            className="py-2 rounded px-40"
-            placeholder="Enter your number!"
-          />
-
-
-          <textarea
-            pe="text"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="rounded px-40 py-4 mt-5 text-left"
-            placeholder="Enter your message!"
-          />
-          <div className="text-right mr-14 mt-4">
-            <button
-              type="submit"
-              className="border border-white py-1 px-10 rounded text-white bg-cyan-700"
-            >
-              Send
-            </button>
-          </div>
-        </form>
-        <div className="text-base mt-7">
+    <section id="contact" className="p-10 py-20 bg-sky-900">
+      <div className="grid md:grid-cols-2 gap-5 ">
+        <div className="text-base mt-12">
           <h2 className="text-4xl text-center  font-semibold">
             {' '}
             <strong className="m-2 text-slate-200">Contact Us</strong>
@@ -95,6 +49,51 @@ export default function Contact() {
             questions you may have and provided for your funded account
           </p>
         </div>
+        <form ref={formRef} onSubmit={handleSubmit}>
+          <input
+            pe="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="mt-8 py-2  rounded w-full text-center"
+            placeholder="Enter your name!"
+          />
+
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="py-2 rounded w-full mt-3 text-center"
+            placeholder="Enter your email!"
+          />
+          <input
+            style={{ marginTop: '10px' }}
+            type="text"
+            name="mobile"
+            value={formData.mobile}
+            onChange={handleChange}
+            className="py-2 rounded w-full mt-3 text-center"
+            placeholder="Enter your number!"
+          />
+
+          <textarea
+            pe="text"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="rounded py-4 mt-5 text-left w-full text-center"
+            placeholder="Enter your message!"
+          />
+          <div className="text-right  mt-4">
+            <button
+              type="submit"
+              className="border border-white py-1 px-10 rounded text-white bg-cyan-700"
+            >
+              Send
+            </button>
+          </div>
+        </form>
       </div>
       <ToastContainer />
     </section>

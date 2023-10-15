@@ -7,20 +7,17 @@ export default function Funded() {
   return (
     <>
       <HeaderSub />
-      <body
-        style={{ backgroundColor: 'rgb(12 74 110)', height: 'auto' }}
-        className="p-10"
-      >
-        <section className="p-10">
+      <div className="bg-sky-900 p-6">
+        <div className="pt-16">
           <div className="flex justify-center items-center py-2">
             <Link className="bg-slate-300 py-1 px-4 rounded-full" to="/">
               Back
             </Link>
           </div>
-          <h1 className="text-center text-white text-2xl">
+          <h1 className="text-center text-white text-2xl py-2 pb-5">
             This is Funded Stage!
           </h1>
-        </section>
+        </div>
         <div>
           <table className="centered-table">
             <tbody>
@@ -38,16 +35,17 @@ export default function Funded() {
                     <FaRupeeSign /> 300k
                   </p>
                 </td>
-                <td className="text-white">
+                <td className="text-white py-1">
                   Profit Split <br></br> A 60% profit share within 10 days is
                   lucrative, while a 20% loss can be significant, so careful
-                  investment and risk management are crucial.{' '}
+                  investment and risk management are crucial. <br />
+                  <Link
+                    className="py-1 px-7 mt-1 bg-blue-600  rounded-full"
+                    to="/payment"
+                  >
+                    Pay
+                  </Link>
                 </td>
-                <Link to="/payment">
-                  <td className="text-white">
-                    <butoon>Pay</butoon>
-                  </td>
-                </Link>
               </tr>
               <tr>
                 <td className="text-white">2.</td>
@@ -66,13 +64,14 @@ export default function Funded() {
                 <td className="text-white">
                   Profit Split <br></br> A 60% profit share within 10 days is
                   lucrative, while a 20% loss can be significant, so careful
-                  investment and risk management are crucial.{' '}
+                  investment and risk management are crucial. <br />
+                  <Link
+                    className="py-1 px-7 mt-1 bg-blue-600  rounded-full"
+                    to="/payment"
+                  >
+                    Pay
+                  </Link>
                 </td>
-                <Link to="/payment">
-                  <td className="text-white">
-                    <butoon>Pay</butoon>
-                  </td>
-                </Link>
               </tr>
               <tr>
                 <td className="text-white">3.</td>
@@ -91,13 +90,14 @@ export default function Funded() {
                 <td className="text-white">
                   Profit Split <br></br> A 60% profit share within 10 days is
                   lucrative, while a 20% loss can be significant, so careful
-                  investment and risk management are crucial.{' '}
+                  investment and risk management are crucial. <br />
+                  <Link
+                    className="py-1 px-7 mt-1 bg-blue-600  rounded-full"
+                    to="/payment"
+                  >
+                    Pay
+                  </Link>
                 </td>
-                <Link to="/payment">
-                  <td className="text-white">
-                    <butoon>Pay</butoon>
-                  </td>
-                </Link>
               </tr>
               <tr>
                 <td className="text-white">4.</td>
@@ -116,13 +116,14 @@ export default function Funded() {
                 <td className="text-white">
                   Profit Split <br></br> A 60% profit share within 10 days is
                   lucrative, while a 10% loss can be significant, so careful
-                  investment and risk management are crucial.{' '}
+                  investment and risk management are crucial. <br />
+                  <Link
+                    className="py-1 px-7 mt-1 bg-blue-600  rounded-full"
+                    to="/payment"
+                  >
+                    Pay
+                  </Link>
                 </td>
-                <Link to="/payment">
-                  <td className="text-white">
-                    <butoon>Pay</butoon>
-                  </td>
-                </Link>
               </tr>
             </tbody>
           </table>
@@ -140,7 +141,7 @@ export default function Funded() {
           <h2 className="text-white">Phase 1</h2>
           <table className="centered-table">
             <tbody>
-              <tr className='text-white'>
+              <tr className="text-white">
                 <td>1.</td>
                 <td>Trading Period</td>
                 <td>15 days</td>
@@ -153,7 +154,7 @@ export default function Funded() {
           <h2 className="text-white">Phase 2</h2>
           <table className="centered-table">
             <tbody>
-              <tr className='text-white'>
+              <tr className="text-white">
                 <td>2.</td>
                 <td>Trading Period</td>
                 <td>15 days</td>
@@ -162,7 +163,7 @@ export default function Funded() {
             </tbody>
           </table>
         </div>
-      </body>
+      </div>
     </>
   );
 }

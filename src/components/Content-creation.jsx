@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Creation() {
   return (
-    <section>
-      <div className="grid md:grid-cols-2 gap-5 p-10  bg-sky-900">
+    <section className='md:p-10 p-5 bg-sky-900'>
+      <div className="grid md:grid-cols-2 gap-5">
         <figure className="p-2 flex justify-center items-center">
           <img
             className="rounded"
@@ -11,7 +11,7 @@ export default function Creation() {
             alt=""
           />
         </figure>
-        <div className="text-base px-5  md:px-0">
+        <div className="text-base md:px-5">
           <h2 className="text-4xl text-center pt-24 font-semibold">
             {' '}
             <strong className="m-2 text-slate-200">Content Creation</strong>

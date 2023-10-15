@@ -15,15 +15,15 @@ function DisplayForm() {
   // console.log(storedFormData)
 
   return (
-    <section className="h-screen bg-sky-900">
+    <section className="h-auto md:h-screen bg-sky-900 display">
       <HeaderSub />
-      <div className="p-6">
+      <div className="p-6 pt-24">
         <div className="flex justify-center items-center">
           <Link className="bg-slate-300 py-1 px-4 rounded-full" to="/">
             Back
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {multipleUser.length > 0 ? (
             multipleUser.map((ele, i) => {
               return (

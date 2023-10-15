@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section id="About">
+    <section id="about">
        <div className="grid md:grid-cols-2 gap-5 p-10  bg-sky-900">
         <div className="text-base px-5 mt-10">
           <h2 className="text-4xl text-center py-4 font-semibold">
@@ -18,7 +18,7 @@ export default function About() {
           </p>
         </div>
         <figure
-          className="p-2 flex justify-center items-center"
+          className="md:p-2 flex justify-center items-center"
         >
           <img 
             className="rounded"

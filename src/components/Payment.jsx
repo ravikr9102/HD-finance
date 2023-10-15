@@ -6,7 +6,7 @@ export default function Payment() {
   return (
     <section className="bg-sky-900 h-screen">
       <HeaderSub />
-      <div className="p-8">
+      <div className="p-8 pt-24">
         <div className="flex justify-center items-center py-2">
           <Link className="bg-slate-300 py-1 px-4 rounded-full" to="/">
             Back

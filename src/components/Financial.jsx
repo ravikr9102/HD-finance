@@ -3,8 +3,8 @@ import React from 'react';
 export default function Financial() {
   return (
     <section> 
-      <div className="grid md:grid-cols-2 gap-5 p-10  bg-sky-900">
-        <div className="text-base px-5  md:px-0">
+      <div className="grid md:grid-cols-2 gap-5 md:p-10 p-5  bg-sky-900">
+        <div className="text-base md:px-5">
           <h2 className="text-4xl text-center pt-24 font-semibold">
             {' '}
             <strong className="m-2 text-slate-200">Financial Planning</strong>Services
