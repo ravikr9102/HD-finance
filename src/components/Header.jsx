@@ -7,9 +7,9 @@ import { FaWhatsapp } from 'react-icons/fa';
 export default function Header() {
   return (
     <div className="flex justify-between items-center px-8 py-7 bg-black text-white">
-      <div>
+      <Link to='/'>
         <h1 className="text-2xl">HD Finance</h1>
-      </div>
+      </Link>
       <ul className="flex justify-center items-center">
         <li className="mr-8">
           {' '}

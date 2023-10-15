@@ -6,7 +6,7 @@ export default function Client() {
       <h2 className="text-4xl text-center py-4 font-semibold text-slate-200">
         Clients
       </h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
         <figure>
           <img src="/assets/photo-1557426272-fc759fdf7a8d.avif" />
         </figure>

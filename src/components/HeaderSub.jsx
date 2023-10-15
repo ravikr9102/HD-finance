@@ -8,9 +8,9 @@ function HeaderSub() {
   return (
     <>
       <div className="flex justify-between items-center px-8 py-4 bg-black text-white">
-        <div>
+        <Link to='/'>
           <h1 className="text-2xl">HD Finance</h1>
-        </div>
+        </Link>
         <ul className="flex justify-center items-center">
           <Link to="/display">
             <li className="mr-8">Message</li>

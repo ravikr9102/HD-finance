@@ -15,9 +15,9 @@ function DisplayForm() {
   // console.log(storedFormData)
 
   return (
-    <>
+    <section className="h-screen bg-sky-900">
       <HeaderSub />
-      <div className="form p-6">
+      <div className="p-6">
         <div className="flex justify-center items-center">
           <Link className="bg-slate-300 py-1 px-4 rounded-full" to="/">
             Back
@@ -41,11 +41,13 @@ function DisplayForm() {
               );
             })
           ) : (
-            <div className="text-center">No data found</div>
+            <div className='flex justify-center items-center'>
+              <p>No data found</p>
+            </div>
           )}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

@@ -4,7 +4,7 @@ export default function Service() {
   return (
     <section id="Service" className="p-10 bg-sky-900">
       <h2 className="text-4xl text-center py-4 font-semibold text-slate-200 ">Services</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
         <div className='relative'>
           <figure>
             <img src="/assets/photo-1620912189865-1e8a33da4c5e.avif" />

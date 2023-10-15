@@ -3,10 +3,10 @@ import React from 'react';
 export default function Creation() {
   return (
     <section>
-      <div className="grid grid-cols-2 gap-5 p-10  bg-sky-900">
+      <div className="grid md:grid-cols-2 gap-5 p-10  bg-sky-900">
         <figure className="p-2 flex justify-center items-center">
           <img
-            className="object-cover w-80 h-80 w-96 h-96 rounded"
+            className="rounded"
             src="/assets/photo-1611784728558-6c7d9b409cdf.avif"
             alt=""
           />
