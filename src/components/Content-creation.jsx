@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Creation() {
   return (
-    <section className='md:p-10 p-5 bg-sky-900'>
+    <section className="md:p-10 p-5 bg-sky-900">
       <div className="grid md:grid-cols-2 gap-5">
         <figure className="p-2 flex justify-center items-center">
           <img

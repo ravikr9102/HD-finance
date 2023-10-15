@@ -6,66 +6,6 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
 import { NavHashLink } from 'react-router-hash-link';
 
-// export default function Header() {
-//   let [toggleMenu, setToggleMenu] = useState(false);
-//   let [darkTheme, setdarkTheme] = useState(false);
-//   const revertToggle = () => {
-//     setToggleMenu(!toggleMenu);
-//   };
-//   const revertTheme = () => {
-//     setdarkTheme(!darkTheme);
-//   };
-//   return (
-//     <div className="md:flex md:justify-between md:items-center md:px-8 py-7 bg-black text-white">
-//       <Link to="/">
-//         <h1 className="text-2xl">HD Finance</h1>
-//       </Link>
-//       <div>
-//         {toggleMenu ? (
-//           <RxCross1 onClick={revertToggle} className="text-3xl" />
-//         ) : (
-//           <RxHamburgerMenu
-//             className="md:hidden block text-3xl"
-//             onClick={revertToggle}
-//           />
-//         )}
-//       </div>
-//       <ul className="md:flex md:justify-center md:items-center">
-//         <li className="mr-8">
-//           {' '}
-//           <a href="#About">About </a>
-//         </li>
-//         <li className="mr-8">
-//           {' '}
-//           <a href="#Service">Services </a>
-//         </li>
-//         <li className="mr-8">
-//           <a href="#Contact">Contact</a>
-//         </li>
-//         <Link to="/display">
-//           <li className="mr-8">Message</li>
-//         </Link>
-//         <Link to="/funded">
-//           <li className="mr-8">Funded</li>
-//         </Link>
-//         <Link to="/payment">
-//           <li className="mr-8">Payment</li>
-//         </Link>
-//       </ul>
-
-//       <ul className="md:flex justify-center items-center">
-//         <li className="mr-6 text-xl flex justify-center items-center">
-//           <AiOutlineUser />
-//           <p style={{ fontSize: '15px' }}>15k+</p>
-//         </li>
-//         <li className="flex justify-center items-center">
-//           <FaWhatsapp />
-//           <p style={{ fontSize: '15px' }}>+7355583373</p>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }
 export default function Header() {
   let [toggleMenu, setToggleMenu] = useState(false);
   let [darkTheme, setdarkTheme] = useState(false);
@@ -115,19 +55,20 @@ export default function Header() {
             <Link to="/funded">Funded</Link>
           </li>
           <li className="m-3 md:mx-5 hover:text-blue-500">
-            <Link to='payment'>Payment</Link>
+            <Link to="payment">Payment</Link>
           </li>
           <li className="m-3 md:mx-5 pr-32 md:pr-0 hover:text-blue-500 flex justify-center items-center cursor-pointer">
             <AiOutlineUser />
             15k+
           </li>
-          <li className="m-3 md:mx-5 pr-32 md:pr-0 hover:text-blue-500 flex justify-center items-center cursor-pointer">
-            <FaWhatsapp />
-            +7355583373
-          </li>
+          <a rel="noreferrer" target="_blank" href="tel:+ 7355583373">
+            <li className="m-3 md:mx-5 pr-32 md:pr-0 hover:text-blue-500 flex justify-center items-center cursor-pointer">
+              <FaWhatsapp />
+              +7355583373
+            </li>
+          </a>
         </ul>
       </nav>
     </header>
   );
 }
-// export default Header;

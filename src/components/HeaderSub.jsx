@@ -1,53 +1,10 @@
 import React from 'react';
-import { BiLogoGmail } from 'react-icons/bi';
 import { AiOutlineUser } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
-
-// function HeaderSub() {
-//   return (
-//     <>
-//       <div className="md:flex justify-between items-center px-8 py-4 bg-black text-white">
-//         <Link to='/'>
-//           <h1 className="text-2xl text-center">HD Finance</h1>
-//         </Link>
-//         <ul className="flex justify-center items-center">
-//           <Link to="/display">
-//             <li className="mr-8">Message</li>
-//           </Link>
-//           <Link to="/funded">
-//             <li className="mr-8">Funded</li>
-//           </Link>
-//           <Link to="/payment">
-//             <li className="mr-8">Payment</li>
-//           </Link>
-//         </ul>
-
-//         <ul className="flex justify-center items-center">
-//           <li className="mr-6 text-xl">
-//             <a href="mailto:hdfinance2020@gmail.com">
-//               {' '}
-//               <BiLogoGmail />
-//             </a>
-//           </li>
-//           <li className="mr-6 text-xl flex justify-center items-center">
-//             <AiOutlineUser />
-//             <p style={{ fontSize: '15px' }}>15k+</p>
-//           </li>
-//           <li className="flex justify-center items-center">
-//             <FaWhatsapp />
-//             <p>+7355583373</p>
-//           </li>
-//         </ul>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default HeaderSub;
 
 export default function HeaderSub() {
   let [toggleMenu, setToggleMenu] = useState(false);
@@ -88,10 +45,12 @@ export default function HeaderSub() {
             <AiOutlineUser />
             15k+
           </li>
-          <li className="m-3 md:mx-5 pr-32 md:pr-0 hover:text-blue-500 flex justify-center items-center cursor-pointer">
-            <FaWhatsapp />
-            +7355583373
-          </li>
+          <a rel="noreferrer" target="_blank" href="tel:+ 7355583373">
+            <li className="m-3 md:mx-5 pr-32 md:pr-0 hover:text-blue-500 flex justify-center items-center cursor-pointer">
+              <FaWhatsapp />
+              +7355583373
+            </li>
+          </a>
         </ul>
       </nav>
     </header>

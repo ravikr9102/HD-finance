@@ -10,11 +10,11 @@ export default function Footer() {
         </div>
         <ul className="flex justify-center items-center">
           <li className="mr-6 text-3xl">
-          <a href="mailto:hdfinance2020@gmail.com">
-            {' '}
-            <BiLogoGmail />
-          </a>
-        </li>
+            <a href="mailto:hdfinance2020@gmail.com">
+              {' '}
+              <BiLogoGmail />
+            </a>
+          </li>
         </ul>
       </div>
     </section>
