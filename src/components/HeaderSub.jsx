@@ -5,6 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
+import {BsFillTelephoneFill} from 'react-icons/bs'
 
 export default function HeaderSub() {
   let [toggleMenu, setToggleMenu] = useState(false);
@@ -45,10 +46,9 @@ export default function HeaderSub() {
             <AiOutlineUser />
             15k+
           </li>
-          <a rel="noreferrer" target="_blank" href="tel:+ 7355583373">
+          <a rel="noreferrer" target="_blank" href="tel:+91 7355583373">
             <li className="m-3 md:mx-5 pr-32 md:pr-0 hover:text-blue-500 flex justify-center items-center cursor-pointer">
-              <FaWhatsapp />
-              +7355583373
+              <BsFillTelephoneFill />
             </li>
           </a>
         </ul>

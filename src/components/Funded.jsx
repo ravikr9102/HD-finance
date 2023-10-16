@@ -84,7 +84,7 @@ export default function Funded() {
                 <td className="text-white">
                   Funded Account -{' '}
                   <p className="flex justify-center items-center">
-                    <FaRupeeSign /> 50k
+                    <FaRupeeSign /> 500k
                   </p>
                 </td>
                 <td className="text-white">
